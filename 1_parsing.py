@@ -18,6 +18,7 @@ json_data = ast.literal_eval(text_data)
 for rownum, row in enumerate(json_data):
     print(row)
     print(type(row))
+    print(row['Cells']['Name'])
     if rownum >= 10:
         break
 
