@@ -13,7 +13,13 @@ text_data = data.text[1:-1]
 json_data = ast.literal_eval(text_data)
 # assert type(json_data) is dict
 
-print(json_data)
+# print(json_data)
+# print(type(json_data))
+for rownum, row in enumerate(json_data):
+    print(row)
+    print(type(row))
+    if rownum >= 10:
+        break
 
 # print(json_data)
 # for rownum, peoples in enumerate(json_data):
